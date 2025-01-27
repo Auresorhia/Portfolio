@@ -1,0 +1,213 @@
+/* Variables globales */
+:root {
+    --primary-color: #4641A9;
+    --secondary-color: #333;
+    --text-color: #1A1F2C;
+    --background-color: #f4f4f4;
+    --white: #FFFFFF;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+    --box-shadow: 1px 1px 4px #6b696933;
+  }
+  
+  /* Reset et styles de base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container principal */
+  .container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 1rem;
+  }
+  
+  /* Carte principale */
+  .carre-noirblanc {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    min-height: 900px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Section de bienvenue */
+  .carre1 {
+    background: var(--primary-color);
+    padding: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .welcome-text {
+    color: var(--white);
+  }
+  
+  #hesite-pas {
+    font-size: clamp(2rem, 5vw, 3.625rem);
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .name {
+    font-size: clamp(1.5rem, 3vw, 1.7rem);
+    font-weight: 500;
+  }
+  
+  /* Section formulaire */
+  .carre2 {
+    width: 50%;
+    padding: 3rem;
+    position: relative;
+    background: var(--white);
+  }
+  
+  /* Bouton fermer */
+  .fermer {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-speed);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .fermer:hover {
+    transform: scale(1.1);
+  }
+  
+  .croix {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    right: 1.2rem;
+  }
+  
+  .branche {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    top: 50%;
+  }
+  
+  .branche1 {
+    transform: rotate(45deg);
+  }
+  
+  .branche2 {
+    transform: rotate(-45deg);
+  }
+  
+  /* Titre du formulaire */
+  .contacte-moi {
+    font-size: 2.5rem;
+    margin: 4rem 0 4rem 0;
+    color: var(--text-color);
+  }
+  
+  /* Styles du formulaire */
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  
+  label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  border: #1A1F2C 3px solid;
+  font-size: 1.2rem;
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px #4641a933;
+}
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: black;
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .btn-submit:hover {
+    background-color: var(--primary-color);
+  }
+  
+  @media (max-width: 800px) {
+    .carre1,
+    .carre2 {
+      padding: 1.5rem;
+    }
+    
+    #hesite-pas {
+      font-size: 2rem;
+    }
+    
+    .name {
+      font-size: 1.5rem;
+    }
+    
+    .contacte-moi {
+      font-size: 1.25rem;
+      color: black;
+    }
+  }
+  
+  /* Amélioration de l'accessibilité */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
