@@ -1,40 +1,17 @@
 <?php
+include "inc/head.inc.php";
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio d'Aurélie Lao, développeuse web à la recherche d'une alternance de 2 ans. Découvrez son parcours et ses projets."> <!--Description pour amélioré la visibilité de la page web-->
-    <title>Portfolio - Aurélie Lao</title>
-    <link rel="stylesheet" href="accueil.css">
+
+<title>Portfolio - Aurélie Lao</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/" aria-label="Accueil">
-                    <img src="./img-blanc/logo-noir.webp" id="logo" alt="Logo du site">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="accueil.php" class="btn">Accueil</a></li>
-                <li><a href="about.php" class="btn">À propos</a></li>
-                <li><a href="projects.php" class="btn">Projets</a></li>
-                <li><a href="contact.php" class="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <!-- Section Introduction -->
         <section aria-labelledby="intro-title">
             <div class="intro">
                 <div class="bienvenu">
                     <h1 id="intro-title">&lt;<span>/</span>Aurélie&gt;</h1>
-                    <div id="lao">
-                        <h2>Lao</h2>
-                    </div>
+                        <h2 id="last-name">Lao</h2>
                     <h3>Développeuse web</h3>
                     <h4>Cherche une alternance</h4>
                 </div>
@@ -118,39 +95,11 @@
                         <img src="./img-blanc/inDesign-icon.webp" alt="Logo InDesign">
                         <p>InDesign</p>
                     </div>
-                    
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <nav>
-                <ul>
-                    <li><a href="/about">À propos</a></li>
-                    <li><a href="/privacy-policy">Politique de confidentialité</a></li>
-                    <li><a href="/terms">Conditions d'utilisation</a></li>
-                </ul>
-            </nav>
-    
-            <!-- Information de mes contact -->
-            <section class="contact-info">
-                <p>Contactez-moi : <a href="mailto:@gmail.com">laoaurelie404@gmail.com</a></p>
-                <p>Téléphone : 06 13 02 54 38</p>
-            </section>
-    
-            <!--les réseaux sociaux -->
-            <section class="social-media">
-                <a href="https://github.com/AureSorhia" target="_blank">Github</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </section>
-    
-            <!-- Informations de copyright -->
-            <section class="copyright">
-                <p>&copy; 2025 aurelie-lao.com. Tous droits réservés.</p>
-            </section>
-        </div>
-    </footer>
-</body>
-</html>
+<?php
+include "inc/footer.inc.php";
+?>

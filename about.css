@@ -84,7 +84,7 @@ body {
     gap: 3rem;
 }
 
-.photo-nom{
+#titre-introduction{
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -95,7 +95,7 @@ body {
     width: 45rem;
 }
 
-h1{
+#name{
     font-size: 4rem;
     position: absolute;
     bottom: 30rem;
@@ -103,43 +103,39 @@ h1{
     color: var(--primary)
 }
 
-h2 strong{
+#text-presentation strong{
     color: var(--secondary);
 }
 
-#photo-profile{
-    border: 1px solid;
-}
-
-h3{
+#titre-services{
     font-size: 2.5rem;
 }
 
-h4{
+#sous-titre-services{
     font-size: 1.2rem;
 }
-.container-container{
+.container{
     margin: 5rem;
 }
 
 .service{
     margin: 6rem 3rem 4rem 6rem;
 }
-.container-service-reverse{
+.container-service{
     display: flex;
     flex-direction: row-reverse;
 }
-.container-service{
+.services{
     display: flex;
     
 }
-.container-reverse{
+.container{
     display: flexbox;
     margin-right: 2rem;
     width: 100%;
 }
 
-.container-reverse h5{
+.container h5{
     display: flex;
     flex-direction: row-reverse;
     font-size: 1.4rem;
@@ -163,7 +159,7 @@ h4{
     flex-direction: row-reverse;
 }
 
-h6{
+.text-service{
     font-size: 1rem;
     margin-top: 1rem;
 }
@@ -204,19 +200,19 @@ footer a:hover {
         gap: 1rem;
     }
 
-    h1 {
+    #name {
         font-size: 2.5rem;
     }
 
-    h2 {
+    #text-presentation {
         font-size: 2rem;
     }
 
-    h3 {
+    #titre-services {
         font-size: 1.5rem;
     }
 
-    h4 {
+    #sous-titre-services {
         font-size: 1.2rem;
     }
 
@@ -250,7 +246,7 @@ footer a:hover {
         padding: 0;
         gap: 2rem;
     }
-    #photo-profile {
+    #photo {
         max-width: 600px;
     }
     .logo img {
