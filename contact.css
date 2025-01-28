@@ -205,10 +205,9 @@ textarea:focus {
   }
   
   /* Amélioration de l'accessibilité */
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .carre-noirblanc {
         flex-direction: column;
-        min-height: auto;
     }
     .carre1,
     .carre2 {
@@ -216,15 +215,18 @@ textarea:focus {
         padding: var(--spacing-md);
     }
     .carre1 {
-        padding: var(--spacing-lg);
+        padding: 2rem;
     }
     .contacte-moi {
-        margin: var(--spacing-lg) 0;
+        margin: 2rem;
         text-align: center;
     }
     .fermer {
-        top: var(--spacing-sm);
-        right: var(--spacing-sm);
+        top: 1rem;
+        right: 1rem;
+    }
+    input{
+      margin-bottom: 1rem;
     }
 }
 @media (max-width: 480px) {
@@ -252,7 +254,7 @@ textarea:focus {
         min-height: 100vh;
     }
     .form-group {
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: 1rem;
     }
     .contacte-moi {
         margin: var(--spacing-md) 0;
