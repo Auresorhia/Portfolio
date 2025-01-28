@@ -1,96 +1,75 @@
-:root {
-  --spacing: 1rem;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+* {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #473FF7;
+  --secondary: #57ED89;
+  --light-bg: #E5E5FF;
+  --dark: #1A1F2C;
+  --text: #333;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  overflow-x: hidden;
+}
+.nav-links a:hover {
+  color: #473FF7;
 }
 
-.slider-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing);
-  position: relative;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 1rem;
-}
-
-.slide {
-  min-width: calc(25% - 1rem);
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 3/4;
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.7; /* Les projets non centraux sont estompés */
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slide-main {
-  transform: scale(1.2); /* Agrandit légèrement le projet central */
-  min-width: calc(30% - 1rem);
-  opacity: 1; /* Le projet central est entièrement visible */
-  z-index: 2; /* Il apparaît au-dessus des autres */
-}
-
-.slide-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.8);
-  display: flex;
-  align-items: flex-end;
-  padding: 1.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.slide:hover .slide-overlay {
-  opacity: 1;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+.contact {
   background: #473FF7;
-  border: none;
-  border-radius: 50%;
-  color: #ffffff;
-  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+
+/* Navigation */
+.navbar {
   display: flex;
+  list-style: none;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease;
-  z-index: 10;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 5px #0000001a;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
 }
 
-.slider-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+.btn {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
 }
 
-.prev-btn {
-  left: 1rem;
+.logo img {
+  height: 4rem;
+  width: auto;
 }
-
-.next-btn {
-  right: 1rem;
+/* Mobile menu */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px #0000001a;
+}
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }

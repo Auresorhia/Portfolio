@@ -45,7 +45,7 @@
     overflow: hidden;
     box-shadow: var(--box-shadow);
   }
-  
+
   /* Section de bienvenue */
   .carre1 {
     background: var(--primary-color);
@@ -205,7 +205,7 @@ textarea:focus {
   }
   
   /* Amélioration de l'accessibilité */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .carre-noirblanc {
         flex-direction: column;
     }

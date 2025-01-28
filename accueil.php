@@ -1,7 +1,15 @@
-<?php
-include "inc/head.inc.php";
-?>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Aurélie Lao, développeuse web à la recherche d'une alternance de 2 ans. Découvrez son parcours et ses projets."> <!--Description pour amélioré la visibilité de la page web-->
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <header>
+    <?php include "inc/nav.inc.php";?>
+    </header>
 <title>Portfolio - Aurélie Lao</title>
 </head>
 <body>
@@ -16,7 +24,7 @@ include "inc/head.inc.php";
                     <h4>Cherche une alternance</h4>
                 </div>
                 <div class="photo-intro">
-                        <img src="img-blanc/photo.webp" id="photo-profile" alt="photo de profile de Aurélie" style="width: 600px">
+                        <img src="img-blanc/photo.webp" id="photo-profile" alt="photo de profile de Aurélie" style="width: 600">
                     <div class="intro-btn">
                             <p>
                                 Bonjour, je m'appelle Aurélie Lao. Je suis en première année de développement web à Digital Campus. Je cherche une alternance pour une durée de 2 ans.
@@ -103,3 +111,5 @@ include "inc/head.inc.php";
 <?php
 include "inc/footer.inc.php";
 ?>
+</body>
+</html>
