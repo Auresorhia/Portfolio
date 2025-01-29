@@ -102,7 +102,7 @@
             </section>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="slider.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>

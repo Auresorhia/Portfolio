@@ -32,6 +32,12 @@
                         <span class="branche branche2"></span>
                     </span>
                 </button>
+
+                <div class="theme" aria-label="Changer le thème">
+                    <div type="button" class="logo" aria-hidden="true">
+                            <div id="mode"></div>
+                    </div>
+                </div>
                 
                 <!-- Titre du formulaire -->
                 <h2 class="contacte-moi">Contactez-moi</h2>
@@ -53,18 +59,19 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="prenom">Prénom</label>
+                            <label for="nom">Nom</label>
                             <input 
                                 type="text" 
-                                id="prenom" 
-                                name="prenom" 
-                                placeholder="Votre prénom" 
+                                id="nom" 
+                                name="nom" 
+                                placeholder="Votre nom" 
                                 required 
                                 autocomplete="given-name"
                                 minlength="2"
                                 maxlength="50"
                             >
                         </div>
+
 
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -91,5 +98,6 @@
             </section>
         </section>
     </main>
+    <script src="contact.js"></script>
 </body>
 </html>
