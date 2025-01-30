@@ -17,12 +17,12 @@
             <!--les réseaux sociaux -->
             <section class="social-media">
                 <a href="https://github.com/AureSorhia" target="_blank">Github</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">Linkedin</a>
             </section>
     
             <!-- Informations de copyright -->
             <section class="copyright">
-                <p>&copy; 2025 aurelie-lao.com. Tous droits réservés.</p>
+                <p>&copy; 2025 aurelie-lao.fr Tous droits réservés.</p>
             </section>
         </div>
     </footer>

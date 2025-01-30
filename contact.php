@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="URL_DE_VOTRE_PAGE">
     <title>Contactez Aurélie Lao</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="asset/css/contact.css">
 </head>
 <body>
     <main class="container">
@@ -33,11 +33,10 @@
                     </span>
                 </button>
 
-                <div class="theme" aria-label="Changer le thème">
-                    <div type="button" class="logo" aria-hidden="true">
-                            <div id="mode"></div>
-                    </div>
-                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
                 
                 <!-- Titre du formulaire -->
                 <h2 class="contacte-moi">Contactez-moi</h2>
@@ -98,6 +97,6 @@
             </section>
         </section>
     </main>
-    <script src="contact.js"></script>
+    <script src="asset/js/contact.js"></script>
 </body>
 </html>

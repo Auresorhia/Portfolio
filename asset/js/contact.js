@@ -1,29 +1,57 @@
 'use strict';
 
-let off = document.getElementById('mode');
-let mode = document.getElementsByClassName('carre2')[0]; // Cible le premier élément avec la classe 'carre2'
-let contactez_moi = document.getElementsByClassName('contacte-moi')[0]; // Cible le premier élément avec la classe 'contacte-moi'
-let labels = document.getElementsByTagName('label');
-let inputs = document.getElementsByTagName('input');
-let textAreas = document.getElementsByTagName('textarea');
+// Sélectionner les éléments
+const toggleSwitch = document.getElementsByClassName('switch')[0].getElementsByTagName('input')[0];
+const body = document.body;
+const carre2 = document.getElementsByClassName('carre2')[0];
+const contacterMoi = document.getElementsByClassName('contacte-moi')[0];
+const labels = document.getElementsByTagName('label');
+const inputs = document.getElementsByTagName('input');
+const textAreas = document.getElementsByTagName('textarea');
 
-off.addEventListener('click', () => {
-    document.body.style.background = "#333";
-    mode.style.backgroundColor = "#1E1E1E";
-    contactez_moi.style.color = "#f4f4f4";
+// Fonction pour appliquer le mode nuit
+function enableNightMode() {
+    body.style.backgroundColor = '#333';
+    carre2.style.backgroundColor = '#1E1E1E';
+    contacterMoi.style.color = '#f4f4f4';
 
-    // Applique un style à chaque label
     for (let label of labels) {
-        label.style.color = "white";
+        label.style.color = 'white';
     }
 
-    // Applique un style à chaque input
     for (let input of inputs) {
-        input.style.border = "2px solid black"; // Définir la largeur, le style (solide) et la couleur de la bordure
+        input.style.border = '2px solid black';
     }
 
-    // Applique un style à chaque textarea
     for (let textArea of textAreas) {
-        textArea.style.border = "2px solid black";
+        textArea.style.border = '2px solid black';
+    }
+}
+
+// Fonction pour réinitialiser le mode clair
+function disableNightMode() {
+    body.style.backgroundColor = '#fff';
+    carre2.style.backgroundColor = '#fff';
+    contacterMoi.style.color = '#000';
+
+    for (let label of labels) {
+        label.style.color = '#000';
+    }
+
+    for (let input of inputs) {
+        input.style.border = '3px solid #ccc';
+    }
+
+    for (let textArea of textAreas) {
+        textArea.style.border = '3px solid #ccc';
+    }
+}
+
+// Ajouter un écouteur d'événement pour la case à cocher
+toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked) {
+        enableNightMode();
+    } else {
+        disableNightMode();
     }
 });
