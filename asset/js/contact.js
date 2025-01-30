@@ -28,24 +28,6 @@ function enableNightMode() {
     }
 }
 
-// Fonction pour réinitialiser le mode clair
-function disableNightMode() {
-    body.style.backgroundColor = '#fff';
-    carre2.style.backgroundColor = '#fff';
-    contacterMoi.style.color = '#000';
-
-    for (let label of labels) {
-        label.style.color = '#000';
-    }
-
-    for (let input of inputs) {
-        input.style.border = '3px solid #ccc';
-    }
-
-    for (let textArea of textAreas) {
-        textArea.style.border = '3px solid #ccc';
-    }
-}
 
 // Ajouter un écouteur d'événement pour la case à cocher
 toggleSwitch.addEventListener('change', () => {

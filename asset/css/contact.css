@@ -259,7 +259,6 @@ textarea {
   .carre1,
   .carre2 {
       width: 100%;
-      padding: var(--spacing-md);
   }
   .carre1 {
       padding: 2rem;
@@ -297,30 +296,9 @@ textarea {
   textarea{
     margin-bottom: 2rem;
   }
-  
-  .form-group {
-      margin-bottom: var(--spacing-md);
-  }
-  .theme{
-    width: 3.5rem;
-    height: 2rem;
-  }
-  .logo{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+
 }
 
-@media (max-width: 480px) {
-  .theme{
-    width: 2.5rem;
-    height: 1rem;
-  }
-  .logo{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
 /* Pour les écrans en mode paysage sur mobile */
 @media (max-height: 600px) and (orientation: landscape) {
   .carre-noirblanc {
