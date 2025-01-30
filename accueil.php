@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio d'Aurélie Lao, développeuse web à la recherche d'une alternance de 2 ans. Découvrez son parcours et ses projets."> <!--Description pour amélioré la visibilité de la page web-->
-    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="asset/css/accueil.css">
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
                     <h4>Cherche une alternance</h4>
                 </div>
                 <div class="photo-intro">
-                        <img src="img-blanc/photo.webp" id="photo-profile" alt="photo de profile de Aurélie" style="width: 600">
+                        <img src="./asset/img/img-blanc/photo.webp" id="photo-profile" alt="photo de profile de Aurélie" style="width: 600">
                     <div class="intro-btn">
                             <p>
                                 Bonjour, je m'appelle Aurélie Lao. Je suis en première année de développement web à Digital Campus. Je cherche une alternance pour une durée de 2 ans.
@@ -72,35 +72,35 @@
                 <h2>Mes compétences</h2>
                 <div class="competences-container">
                 <div id="html">
-                        <img src="./img-blanc/html-icon.webp" alt="Logo HTML" >
+                        <img src="./asset/img/img-blanc/html-icon.webp" alt="Logo HTML" >
                         <p>HTML</p>
                     </div>
                     <div id="css">
-                        <img src="./img-blanc/css-icon.webp" alt="Logo CSS">
+                        <img src="./asset/img/img-blanc/css-icon.webp" alt="Logo CSS">
                         <p>CSS</p>
                     </div>
                     <div id="wordpress">
-                        <img src="./img-blanc/wordPress-icon.webp" alt="Logo Wordpress">
+                        <img src="./asset/img/img-blanc/wordPress-icon.webp" alt="Logo Wordpress">
                         <p>WordPress</p>
                     </div>
                     <div id="php">
-                        <img src="./img-blanc/php-icon.webp" alt="Logo Php">
+                        <img src="./asset/img/img-blanc/php-icon.webp" alt="Logo Php">
                         <p>PHP</p>
                     </div>
                     <div id="javascript">
-                        <img src="./img-blanc/javaScript-icon.webp" alt="Logo JavaScript">
+                        <img src="./asset/img/img-blanc/javaScript-icon.webp" alt="Logo JavaScript">
                         <p>JavaScript</p>
                     </div>
                     <div id="illustrator">
-                        <img src="./img-blanc/illustrator-icon.webp" alt="Logo Illustrator">
+                        <img src="./asset/img/img-blanc/illustrator-icon.webp" alt="Logo Illustrator">
                         <p>Illustrator</p>
                     </div>
                     <div id="photoshop">
-                        <img src="./img-blanc/photoShop-icon.webp" alt="Logo Photoshop">
+                        <img src="./asset/img/img-blanc/photoShop-icon.webp" alt="Logo Photoshop">
                         <p>PhotoShop</p>
                     </div>
                     <div id="indesign">
-                        <img src="./img-blanc/inDesign-icon.webp" alt="Logo InDesign">
+                        <img src="./asset/img/img-blanc/inDesign-icon.webp" alt="Logo InDesign">
                         <p>InDesign</p>
                     </div>
                 </div>

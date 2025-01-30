@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Projets</title>
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="./asset/css/projects.css">
 </head>
 <body>
 <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="/" aria-label="Accueil">
-                    <img src="./img-blanc/logo-noir.webp" id="logo" alt="Logo du site">
+                    <img src="./asset/img/img-blanc/logo-noir.webp" id="logo" alt="Logo du site">
                 </a>
             </div>
             <ul class="nav-links">

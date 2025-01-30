@@ -24,6 +24,6 @@ off.addEventListener('click', () => {
 
     // Applique un style à chaque textarea
     for (let textArea of textAreas) {
-        textArea.style.color = "2px solid black";
+        textArea.style.border = "2px solid black";
     }
 });
