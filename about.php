@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A propos - Aurélie</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="asset/css/about.css">
 </head>
 <body>
 <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="/" aria-label="Accueil">
-                    <img src="./asset//img-blanc/logo-noir.webp" id="logo" alt="Logo du site">
+                    <img src="./asset/img/img-noir/logo-noir.webp" id="logo" alt="Logo du site">
                 </a>
             </div>
             <ul class="nav-links">
@@ -31,7 +31,7 @@
                     <h1 id="titre-introduction">Aurélie</h1>
                 </div>
                 <div id="presentation">
-                    <h2><strong>Développeuse <span>Web</span></strong> en premiere année de bachelor
+                    <h2><strong>Développeuse Web</strong> en premiere année de bachelor
                     <br>Passionnée par la création de sites web, je me forme au développement front-end et back-office<br>
                     Bien que je n'aie pas encore d'expérience professionnelle, je suis motivée à mettre mes compétences en pratique et à contribuer à des projets concrets</h2>
                 </div> 

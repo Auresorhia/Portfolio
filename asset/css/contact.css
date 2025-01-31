@@ -108,7 +108,7 @@ body {
   right: 1.2rem;
 }
 
-.branche {
+.branche1, .branche2 {
   position: absolute;
   width: 100%;
   height: 2px;

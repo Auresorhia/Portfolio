@@ -21,7 +21,7 @@
   }
   
   .contact {
-    background: #473FF7;
+    background: var(--primary);
     text-decoration: none;
     color: white;
     padding: 0.5rem 2rem;
@@ -42,6 +42,50 @@
     top: 0;
     z-index: 1000;
     padding: 0.5rem 1rem;
+  }
+  .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #E5E5FF;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px #00000066;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(1.6em);
+    width: 2em;
+    height: 2em;
+    bottom: 0;
   }
   
   .btn {
@@ -86,17 +130,20 @@ main {
 
 h1 {
     margin-top: 8rem;
-    font-size: 5rem;
+    font-size: 10rem;
     color: #000000;
 }
 
 span{
-    color: #473FF7;
+    color: var(--primary);
     font-size:larger;
 }
 
+hr{
+    border: 1px solid #473FF7;
+}
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .intro h2 {
@@ -121,13 +168,12 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 4rem 0;
+    margin: 6rem 0 8rem 0;
 }
 #photo-profile {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 50px;
     z-index: 2;
 }
 
@@ -136,14 +182,19 @@ h4 {
     border-radius: 15px;
     padding: 1.5rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: left;
 }
 .intro-btn p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+.intro-btn p strong{
+    color: var(--primary);
+
 }
 button {
     background: var(--secondary);
@@ -152,15 +203,16 @@ button {
     border-radius: 8px;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s ease;
     width: 50%;
 }
-button:hover {
-    transform: translateY(-2px);
-}
 
+.projets h2{
+    text-align: center;
+    margin: 1em 0 0 2rem;
+}
 
 .projets-container {
     display: grid;
@@ -193,6 +245,11 @@ button:hover {
     font-weight: 500;
 }
 
+.competences h2{
+    text-align: center;
+    margin: 1em 0 0 2rem;
+}
+
 .competences-container {
     display: flex;
     justify-content: center;
@@ -202,7 +259,7 @@ button:hover {
     margin-top: 140px;
 }
 
-.competences-container div {
+.competences-container button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +271,7 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-.competences-container div:hover {
+.competences-container button:hover {
     transform: translateY(-9px);
 }
 
@@ -223,7 +280,7 @@ button:hover {
     font-weight: medium;
 }
 
-#html, #css, #wordpress, #php, #javascript,#illustrator, #photoshop, #indesign{
+#button-html, #button-css, #button-wordpress, #button-php, #button-javascript,#button-illustrator, #button-photoshop, #button-indesign{
     width: 12rem;
     height: 13rem;
 }
@@ -273,15 +330,15 @@ footer a:hover {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h4 {
@@ -321,15 +378,6 @@ footer a:hover {
     .logo img {
         height: 6rem;
     }
-    h1 {
-        font-size: 6rem;
-    }
-    h2 {
-        font-size: 3rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
     .photo-intro {
         flex-direction: row;
         justify-content: center;
@@ -353,6 +401,23 @@ footer a:hover {
     }
     .social-media {
         justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 480px) {
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    .intro-btn p{
+        font-size: 1rem;
     }
 }
 

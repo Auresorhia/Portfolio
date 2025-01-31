@@ -28,8 +28,8 @@
                 <!-- Bouton fermer -->
                 <button type="button" class="fermer" aria-label="Fermer le formulaire">
                     <span class="croix" aria-hidden="true">
-                        <span class="branche branche1"></span>
-                        <span class="branche branche2"></span>
+                        <span class="branche1"></span>
+                        <span class="branche2"></span>
                     </span>
                 </button>
 

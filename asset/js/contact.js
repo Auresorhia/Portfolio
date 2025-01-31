@@ -28,6 +28,20 @@ function enableNightMode() {
     }
 }
 
+function disableNightMode(){
+    body.style.backgroundColor = '#f4f4f4';
+    carre2.style.backgroundColor = '#f4f4f4';
+    contacterMoi.style.color = '#333';
+    for (let label of labels) {
+        label.style.color = '#333';
+    }
+    for (let input of inputs) {
+        input.style.border = '1px solid #ccc';
+    }
+    for (let textArea of textAreas) {
+        textArea.style.border = '1px solid #ccc';
+    }
+}
 
 // Ajouter un écouteur d'événement pour la case à cocher
 toggleSwitch.addEventListener('change', () => {
