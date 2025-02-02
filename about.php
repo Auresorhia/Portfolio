@@ -7,27 +7,15 @@
     <link rel="stylesheet" href="asset/css/about.css">
 </head>
 <body>
-<header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/" aria-label="Accueil">
-                    <img src="./asset/img/img-noir/logo-noir.webp" id="logo" alt="Logo du site">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="accueil.php" class="btn">Accueil</a></li>
-                <li><a href="about.php" class="btn">À propos</a></li>
-                <li><a href="projects.php" class="btn">Projets</a></li>
-                <li><a href="contact.php" class="contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <?php include "inc/nav.inc.php";?>
     </header>
 
     <main>
         <section class="introduction" aria-labelledby="titre-introduction">
             <div class="intro">
                 <div class="photo-nom">
-                    <img src="img-blanc/photo.webp" id="photo-profile" alt="photo de profile de Aurélie"height="530">
+                <img src="./asset/img/img-blanc/photo-fond.webp" id="photo-profile" alt="photo de profile de Aurélie" >
                     <h1 id="titre-introduction">Aurélie</h1>
                 </div>
                 <div id="presentation">
@@ -81,5 +69,6 @@
     <?php
     include "inc/footer.inc.php";
     ?>
+    <script src="about-mode-dark.js"></script>
 </body>
 </html>

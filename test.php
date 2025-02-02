@@ -3,111 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="À propos d'Aurélie - Développeuse Web en première année de bachelor">
-    <title>À propos - Aurélie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Slider Simple</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 80%;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.3s ease;
+            gap: 10px;
+        }
+
+        .slide {
+            min-width: 50%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+        .prev-btn:hover, .next-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar" aria-label="Navigation principale">
-            <div class="logo">
-                <a href="/" aria-label="Retour à l'accueil">
-                    <img src="./img-blanc/logo-noir.webp" id="logo" alt="Logo du site" width="400" height="400">
-                </a>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" alt="Image 1">
             </div>
-            <ul class="nav-links">
-                <li><a href="accueil.php" class="btn">Accueil</a></li>
-                <li><a href="about.php" class="btn" aria-current="page">À propos</a></li>
-                <li><a href="projects.php" class="btn">Projets</a></li>
-                <li><a href="contact.php" class="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="introduction" aria-labelledby="titre-introduction">
-            <div class="intro">
-                <div class="photo-nom">
-                    <img src="img-blanc/photo.webp" id="photo-profile" alt="Portrait d'Aurélie" width="200" height="200">
-                    <h1 id="titre-introduction">Aurélie</h1>
-                </div>
-                <div class="presentation">
-                    <h2>
-                        <strong>Développeuse <span>Web</span></strong> en première année de bachelor
-                    <p>Passionnée par la création de sites web, je me forme au développement front-end et back-office.</p>
-                    <p>Bien que je n'aie pas encore d'expérience professionnelle, je suis motivée à mettre mes compétences en pratique et à contribuer à des projets concrets.</p>
-                    </h2>
-              </div> 
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Image 2">
             </div>
-        </section>
-
-        <section class="services" aria-labelledby="titre-services">
-            <div class="container-container">
-                <h2 id="titre-services">Ce que je peux apporter...</h2>
-                <p class="subtitle">Mes compétences au service de vos projets</p>
-
-                <div class="service">
-                    <article class="container-service">
-                        <img src="img-noir/html-black.webp" alt="Icône HTML" width="100" height="100">
-                        <div class="container">
-                            <h3>FRONT-END</h3>
-                            <hr>
-                            <p>Je propose mon expertise en front-end pour concevoir des interfaces web modernes, responsives et adaptées aux besoins de vos projets.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="service">
-                    <article class="container-service">
-                        <img src="img-noir/html-black.webp" alt="Icône back-end" width="100" height="100">
-                        <div class="container">
-                            <h3>BACK-END</h3>
-                            <hr>
-                            <p>Je propose mon expertise en back-office pour développer des fonctionnalités performantes, sécurisées et adaptées aux besoins de vos projets.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="service">
-                    <article class="container-service">
-                        <img src="img-noir/html-black.webp" alt="Icône design" width="100" height="100">
-                        <div class="container">
-                            <h3>DESIGN</h3>
-                            <hr>
-                            <p>Je dispose de bases en design, me permettant de contribuer à la création d'interfaces simples et attrayantes, tout en m'adaptant aux besoins des projets.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Image 3">
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <nav aria-label="Navigation secondaire">
-                <ul>
-                    <li><a href="/about">À propos</a></li>
-                    <li><a href="/privacy-policy">Politique de confidentialité</a></li>
-                    <li><a href="/terms">Conditions d'utilisation</a></li>
-                </ul>
-            </nav>
-    
-            <section class="contact-info">
-                <h2>Informations de contact</h2>
-                <p>Email : <a href="mailto:laoaurelie404@gmail.com">laoaurelie404@gmail.com</a></p>
-                <p>Téléphone : <a href="tel:+33613025438">06 13 02 54 38</a></p>
-            </section>
-    
-            <section class="social-media">
-                <h2>Réseaux sociaux</h2>
-                <a href="https://github.com/AureSorhia" target="_blank" rel="noopener noreferrer">Github</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </section>
-    
-            <section class="copyright">
-                <p>&copy; 2025 aurelie-lao.com. Tous droits réservés.</p>
-            </section>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" alt="Image 4">
+            </div>
         </div>
-    </footer>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const prevButton = document.querySelector('.prev-btn');
+            const nextButton = document.querySelector('.next-btn');
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+
+            const updateSliderPosition = () => {
+                slider.style.transform = `translateX(${-currentIndex * 100}%)`;
+            };
+
+            nextButton.addEventListener('click', function() {
+                if (currentIndex < slides.length - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateSliderPosition();
+            });
+
+            prevButton.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = slides.length - 1;
+                }
+                updateSliderPosition();
+            });
+        });
+    </script>
+
 </body>
 </html>

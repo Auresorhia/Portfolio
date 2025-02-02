@@ -35,7 +35,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1rem 5%;
-    box-shadow: 0 2px 5px #0000001a;
     background-color: #fff;
     position: fixed;
     width: 100%;
@@ -47,11 +46,10 @@
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 3.5em;
+    width: 3.9em;
     height: 2em;
   }
-  
-  /* Hide default HTML checkbox */
+
   .switch input {
     opacity: 0;
     width: 0;
@@ -83,9 +81,8 @@
   
   .switch input:checked + .slider:before {
     transform: translateX(1.6em);
-    width: 2em;
-    height: 2em;
-    bottom: 0;
+    width: 1.4em;
+    height: 1.4em;
   }
   
   .btn {
@@ -117,6 +114,10 @@
     align-items: center;
     gap: 1rem;
   }
+  .logo img {
+    height: 5rem;
+    margin-right: 2rem;
+}
 
 main {
     margin-top: 40px;
@@ -344,7 +345,10 @@ footer a:hover {
     h4 {
         font-size: 1.2rem;
     }
-
+    .logo img{
+        height: 3rem;
+        width: auto;
+    }
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -352,6 +356,9 @@ footer a:hover {
 
     .social-media {
         justify-content: center;
+    }
+    .switch{
+        width: 3.9rem;
     }
     
 }

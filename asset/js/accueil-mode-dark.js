@@ -3,11 +3,11 @@
 const toggleSwitch = document.getElementsByClassName('switch')[0].getElementsByTagName('input')[0];
 const body = document.body;
 const menu = document.querySelector('nav');
-const nav = document.querySelector('ul.nav-links');
-const contact = document.querySelector('ul.nav-links')[3];
+const contact = document.querySelectorAll('.nav-links a')[3];
 const projets = document.querySelectorAll('h2')[1];
 const competences = document.querySelectorAll('h2')[2];
 const links = document.querySelectorAll('.nav-links a');
+const nav = document.querySelector('.nav-links'); 
 const title = document.querySelector('h1');
 const formation = document.querySelector('h3');
 const alternance = document.querySelector('h4');
@@ -23,9 +23,8 @@ function enableNightMode() {
     body.style.backgroundColor = '#1E1E1E';
     title.style.color = "white";
     menu.style.backgroundColor = '#1E1E1E';
-    imageLogo.src = './asset/img/img-noir/logo-noir.webp';
+    imageLogo.src = './asset/img/img-blanc/logo-blanc.webp';
     projets.style.color = "white";
-    nav.style.backgroundColor = "#1E1E1E";
     competences.style.color = "white";
     formation.style.color = "white";
     alternance.style.color = "white";
@@ -33,16 +32,16 @@ function enableNightMode() {
     textIntro.style.color = "white";
     textImp.style.color = "#57ED89";
     textImp2.style.color = "#57ED89";
+    nav.style.backgroundColor = '#1E1E1E';
     links.forEach(link => {
         link.style.color = 'white'; // Change la couleur du texte en blanc
     });
-
 }
 
 function disableNightMode(){
     body.style.backgroundColor = 'white';
     title.style.color = "black";
-    imageLogo.src = './asset/img/img-blanc/logo-blanc.webp';
+    imageLogo.src = './asset/img/img-noir/logo-noir.webp';
     menu.style.backgroundColor = 'white';
     nav.style.backgroundColor = "white";
     contact.style.color = "white";
@@ -57,6 +56,7 @@ function disableNightMode(){
     links.forEach(link => {
         link.style.color = 'black'; // Change la couleur du texte en noir
     });
+    contact.style.color = 'white';
 }
 
 // Ajouter un écouteur d'événement pour la case à cocher

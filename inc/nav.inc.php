@@ -1,7 +1,7 @@
 <nav class="navbar">
             <div class="logo">
                 <a href="/" aria-label="Accueil">
-                    <img src="./asset/img/img-noir/logo-noir.webp" id="logo" alt="Logo du site" style="width: 100">
+                    <img src="./asset/img/img-noir/logo-noir.webp" id="logo" alt="Logo du site">
                 </a>
             </div>
 

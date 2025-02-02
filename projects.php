@@ -10,8 +10,8 @@
      <main>
         <section class="featured-project">
             <div class="featured-image">
-                <img src="img/php-icon.webp" 
-                    alt="Formulaire de Connexion">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                    alt="">
             </div>
             <div class="featured-content">
                 <h2>Formulaire de Connexion avec Animation</h2>
@@ -26,7 +26,7 @@
 
         <!-- Slider de Projets -->
         <div class="slider-container">
-            <div class="slider">
+            <div class="slider-projects">
                 <div class="slide">
                     <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
                         alt="Slider d'images Dynamique">
@@ -56,13 +56,13 @@
                     </div>
                 </div>
             </div>
-            <button class="slider-btn prev-btn">&lt;</button>
-            <button class="slider-btn next-btn">&gt;</button>
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
         </div>
-        
+    </main>
     <?php
         include "inc/footer.inc.php";
     ?>
-    <script src="script.js"></script>
+    <script src="./asset/js/projects-mode-dark.js"></script>
 </body>
 </html>

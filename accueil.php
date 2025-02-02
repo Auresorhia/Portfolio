@@ -104,6 +104,6 @@
     <?php
     include "inc/footer.inc.php";
     ?>
-    <script src="asset/js/accueil.js"></script>
+    <script src="asset/js/accueil-mode-dark.js"></script>
 </body>
 </html>

@@ -279,9 +279,6 @@ textarea {
   }
 }
 @media (max-width: 480px) {
-  body {
-      padding: var(--spacing-xs);
-  }
   .container {
       width: 100%;
   }
