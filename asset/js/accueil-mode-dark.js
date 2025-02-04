@@ -28,7 +28,8 @@ function enableNightMode() {
     competences.style.color = "white";
     formation.style.color = "white";
     alternance.style.color = "white";
-    intro.style.backgroundColor = '#473FF7';
+    intro.style.backgroundColor = '#1E1E20';
+    intro.style.border = '3px solid #E5E5FF';
     textIntro.style.color = "white";
     textImp.style.color = "#57ED89";
     textImp2.style.color = "#57ED89";
@@ -50,7 +51,8 @@ function disableNightMode(){
     formation.style.color = "black";
     alternance.style.color = "black";
     intro.style.backgroundColor = '#E5E5FF';
-    textIntro.style.color = "white";
+    intro.style.border = 'none';
+    textIntro.style.color = "black";
     textImp.style.color = "#473FF7";
     textImp2.style.color = "#473FF7";
     links.forEach(link => {

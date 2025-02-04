@@ -25,6 +25,7 @@
                 <p>&copy; 2025 aurelie-lao.fr Tous droits réservés.</p>
             </section>
         </div>
+        
     </footer>
 </body>
 </html>

@@ -64,5 +64,6 @@
         include "inc/footer.inc.php";
     ?>
     <script src="./asset/js/projects-mode-dark.js"></script>
+    <script src="./asset/js/slider.js"></script>
 </body>
 </html>

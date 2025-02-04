@@ -173,7 +173,7 @@ body {
 
 /* Titre du formulaire */
 .contacte-moi {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 4rem 0 4rem 0;
   color: var(--text-color);
 }
@@ -185,16 +185,16 @@ body {
 
 label {
 display: block;
-margin-bottom: 1rem;
+margin-bottom: 0.5rem;
 font-weight: 500;
 color: var(--text-color);
-font-size: 20px;
+font-size: 17px;
 }
 
 input,
 textarea {
 width: 100%;
-padding: 0.75rem;
+height: 3rem;
 border: 2px solid var(--secondary-color);
 border-radius: var(--border-radius);
 border: #cccC 3px solid;

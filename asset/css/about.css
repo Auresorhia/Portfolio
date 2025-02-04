@@ -18,73 +18,31 @@ body {
 }
 .nav-links a:hover {
     color: #473FF7;
-}
-
-.contact {
-    background: #473FF7;
+  }
+  
+  .contact {
+    background: var(--primary);
     text-decoration: none;
     color: white;
     padding: 0.5rem 2rem;
     border-radius: 10px;
-}
-
-/* Navigation */
-.navbar {
+  }
+  
+  /* Navigation */
+  .navbar {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     align-items: center;
     padding: 1rem 5%;
-    box-shadow: 0 2px 5px #0000001a;
     background-color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     padding: 0.5rem 1rem;
-}
-
-.btn {
-    text-decoration: none;
-    color: #000000;
-    transition: color 0.3s ease;
-}
-
-.logo img {
-    height: 4rem;
-    width: auto;
-}
-/* Mobile menu */
-.nav-links {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 1rem;
-    box-shadow: 0 2px 5px #0000001a;
-
-}
-.nav-links.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.intro{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    margin: 13rem 0 0 3rem;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-
-.switch {
+  }
+  .switch {
     font-size: 17px;
     position: relative;
     display: inline-block;
@@ -126,6 +84,56 @@ body {
     width: 1.4em;
     height: 1.4em;
   }
+  
+  .btn {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+  
+  .logo img {
+    height: 4rem;
+    width: auto;
+  }
+  /* Mobile menu */
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #0000001a;
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+  .logo img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
 
 #photo-profile {
     width: 30rem;
@@ -133,12 +141,20 @@ body {
     border-radius: 50px;
     z-index: 2;
 }
+.intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 13rem 0 0 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 #titre-introduction{
     display: flex;
     justify-content: flex-end;
     position: relative;
     margin-right: 3rem;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #presentation {
@@ -158,16 +174,24 @@ body {
 }
 
 #titre-services{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-left:2rem;
 }
 
 #sous-titre-services{
     font-size: 1.2rem;
 }
 .container{
-    margin: 5rem;
+    margin: 1rem;
 }
 
+h4{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+h6{
+    font-size:1.5rem;
+}
 .service{
     margin: 6rem 3rem 4rem 6rem;
 }
@@ -179,29 +203,16 @@ body {
     display: flex;
     
 }
-.container{
-    display: flexbox;
-    margin-right: 2rem;
-    width: 100%;
-}
 
 .container h5{
     display: flex;
     flex-direction: row-reverse;
-    font-size: 1.4rem;
-    font-weight: bold;
 
 }
 
-.container{
-    display: flexbox;
-    margin-left: 2rem;
-    width: 100%;
-}
 
-.container h5 {
-    font-size: 1.4rem;
-    font-weight: bold;
+h5{
+    font-size: 2rem;
 }
 
 .container-reverse h6{
@@ -245,6 +256,9 @@ footer a:hover {
     .navbar {
         padding: 1rem;
     }
+    .service{
+        margin: 6rem 0 2rem 0;
+    }
 
     .nav-links {
         gap: 1rem;
@@ -259,9 +273,11 @@ footer a:hover {
     }
 
     #titre-services {
+        font-size: 2rem;
+    }
+    h4{
         font-size: 1.5rem;
     }
-
     #sous-titre-services {
         font-size: 1.2rem;
     }
@@ -306,7 +322,7 @@ footer a:hover {
         max-width: 600px;
     }
     .logo img {
-        height: 7rem;
+        height: 6rem;
     }
     .footer-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -318,17 +334,92 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    h2{
-        font-size: 2rem;
+    .intro{
+        margin: 0 1rem 0 1rem;
+        font-size: 1rem;
     }
-    .service{
-        margin: 0;
+    h2{
+        font-size: 1.5rem;
+    }
+    #photo-profile{
+        max-width: 350px;
+        margin: 10rem 2.5rem 0 2.5rem;
+    }
+    #titre-services {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 5rem;
+            left: 0;
+            background: white;
+            padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger.toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media screen and (max-width: 372px){
+    #photo-profile{
+        max-width: 300px;
+    }
+    .intro{
+        font-size: 0.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    h6{
+        font-size: 0.7rem;
+    }
+    .container{
+        margin-top: 0;
+    }
+    #titre-services{
+        margin-top: 2rem;
     }
 }
 
 @media screen and (min-width: 1712px) {
     .nav-links{
         font-size:x-large;
+    }
+    .switch{
+        width: 4.2em;
     }
 }
 /* Animations */

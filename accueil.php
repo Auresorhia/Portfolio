@@ -69,7 +69,7 @@
                         <p>HTML</p>
                     </button>
                     <button id="button-css" aria-label="CSS">
-                        <img src="./asset/img/img-blanc/css-icon.webp" alt="Logo CSS">
+                        <img src="./asset/img/img-blanc/css-white.webp" alt="Logo CSS">
                         <p>CSS</p>
                     </button>
                     <button id="button-wordpress" aria-label="WordPress">
@@ -105,5 +105,6 @@
     include "inc/footer.inc.php";
     ?>
     <script src="asset/js/accueil-mode-dark.js"></script>
+    <script src="asset/js/menu-burger.js"></script>
 </body>
 </html>

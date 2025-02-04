@@ -74,7 +74,7 @@ body {
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 4.9rem;
+    width: 4.3rem;
     height: 2em;
   }
 
@@ -109,9 +109,9 @@ body {
   
   .switch input:checked + .slider:before {
     transform: translateX(1.6em);
-    width: 2em;
-    height: 2em;
-    bottom: 0;
+    width: 1.4em;
+    height: 1.4em;
+    bottom: 0.3rem;
   }
 
   .logo img {
@@ -224,6 +224,7 @@ body {
 .next-btn {
     right: 1rem;
 }
+
 
 footer {
     background-color: #1A1F2C;

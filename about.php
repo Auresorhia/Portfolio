@@ -33,7 +33,6 @@
 
                 <div class="service">
                     <div class="container-service">
-                        <img src="img-noir/html-black.webp" id="logo-html" alt="html">
                         <div class="container">
                             <h5>FRONT-END</h5>
                             <hr>
@@ -44,7 +43,6 @@
 
                 <div class="service">
                     <div class="container-service">
-                        <img src="img-noir/html-black.webp" id="logo-html" alt="html">
                         <div class="container">
                             <h5>BACK-END</h5>
                             <hr>
@@ -55,7 +53,6 @@
 
                 <div class="service">
                     <div class="container-service">
-                        <img src="img-noir/html-black.webp" id="logo-html" alt="html">
                         <div class="container">
                             <h5>DESIGN</h5>
                             <hr>
@@ -69,6 +66,7 @@
     <?php
     include "inc/footer.inc.php";
     ?>
-    <script src="about-mode-dark.js"></script>
+    <script src="./asset/js/about-mode-dark.js"></script>
+    <script src="./asset/js/menu-burger.js"></script>
 </body>
 </html>

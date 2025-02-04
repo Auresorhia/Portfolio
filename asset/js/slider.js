@@ -1,12 +1,29 @@
+'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
 
-const prevButton = document.querySelector('.prev-btn');
-console.log(prevButton);
-const nextButton = document.querySelector('.next-btn');
-console.log(nextButton);
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+    let currentIndex = 0;
 
-nextButton.addEventListener('click', () =>{
-    slider.computedStyleMap.transform = `translateX(${-currentIndex * 100}%)`;
-})
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            slide.style.transform = `translateX(${(i - index) * 100}%)`;
+        });
+        slides[index].classList.add('active');
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    // Initial display
+    showSlide(currentIndex);
+});
