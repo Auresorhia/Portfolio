@@ -11,7 +11,7 @@
   </label>
 
   <ul class="nav-links">
-    <li><a href="accueil.php" class="btn">Accueil</a></li>
+    <li><a href="index.php" class="btn">Accueil</a></li>
     <li><a href="about.php" class="btn">À propos</a></li>
     <li><a href="projects.php" class="btn">Projets</a></li>
     <li><a href="contact.php" class="contact">Contact</a></li>

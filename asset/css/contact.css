@@ -130,7 +130,7 @@ body {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 3.5em;
+  width: 3.7em;
   height: 2em;
 }
 
@@ -166,9 +166,9 @@ body {
 
 .switch input:checked + .slider:before {
   transform: translateX(1.6em);
-  width: 2em;
-  height: 2em;
-  bottom: 0;
+  width: 1.4em;
+  height: 1.4em;
+
 }
 
 /* Titre du formulaire */

@@ -16,7 +16,7 @@
     color: var(--text);
     overflow-x: hidden;
   }
-  .nav-links a:hover {
+  .nav-links a:not(.contact):hover {
     color: #473FF7;
   }
   
@@ -27,7 +27,10 @@
     padding: 0.5rem 2rem;
     border-radius: 10px;
   }
-  
+  .contact:hover{
+    background: #1A1F2C;
+    color: white;
+}
   /* Navigation */
   .navbar {
     display: flex;
@@ -46,7 +49,7 @@
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 3.9em;
+    width: 3.7em;
     height: 2em;
   }
 
@@ -91,10 +94,7 @@
     transition: color 0.3s ease;
   }
   
-  .logo img {
-    height: 4rem;
-    width: auto;
-  }
+ 
   /* Mobile menu */
   .nav-links {
     display: flex;
@@ -106,7 +106,6 @@
     width: 100%;
     background: white;
     padding: 1rem;
-    box-shadow: 0 2px 5px #0000001a;
   }
   .nav-links.active {
     display: flex;
@@ -212,7 +211,7 @@ h4 {
     color: var(--primary);
 
 }
-button {
+.button a {
     background: var(--secondary);
     color: var(--dark);
     border: none;
@@ -223,11 +222,25 @@ button {
     cursor: pointer;
     transition: transform 0.3s ease;
     width: 50%;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
 }
+#cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 
 .projets h2{
     text-align: center;
-    margin: 1em 0 0 2rem;
+    margin-top: 1em;
 }
 
 .projets-container {
@@ -263,7 +276,7 @@ button {
 
 .competences h2{
     text-align: center;
-    margin: 1em 0 0 2rem;
+    margin-top: 1em;
 }
 
 .competences-container {
@@ -309,15 +322,15 @@ button {
 }
 
 footer {
-    background: var(--dark);
+    background-color: #1A1F2C;
     color: white;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
+    padding: 3rem 5% 1rem;
+    margin-top: 4rem;
 }
 .footer-container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    text-align: center;
 }
 footer ul {
     list-style: none;
@@ -340,7 +353,10 @@ footer a:hover {
     .navbar {
         padding: 1rem;
     }
-
+    .logo img{
+        height: 3rem;
+        width: auto;
+    }
     .nav-links {
         gap: 1rem;
     }
@@ -376,7 +392,7 @@ footer a:hover {
         justify-content: center;
     }
     .switch{
-        width: 3.9rem;
+        width: 3.7em;
     }
     
 }
@@ -396,6 +412,7 @@ footer a:hover {
         box-shadow: none;
         padding: 0;
         gap: 2rem;
+        font-size:x-large;
     }
     .logo img {
         height: 6rem;
@@ -406,7 +423,7 @@ footer a:hover {
         gap: 4rem;
     }
     #photo-profile {
-        max-width: 500px;
+        max-width: 400px;
     }
     .intro-btn {
         width: 40%;
@@ -424,6 +441,12 @@ footer a:hover {
     .social-media {
         justify-content: flex-start;
     }
+    .switch{
+        width: 4.7em;
+    }
+    .intro-btn p {
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width: 575px) {
     #photo-profile {
@@ -432,6 +455,9 @@ footer a:hover {
 
     .intro-btn p {
         font-size: 1.5rem;
+    }
+    h1{
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width: 480px) {
@@ -443,6 +469,7 @@ footer a:hover {
     }
     .burger {
             display: flex;
+            margin-left:2rem;
     }
     
     .nav-links {
@@ -486,19 +513,12 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 1512px) {
-    .nav-links{
-        font-size:x-large;
-    }
+@media (orientation: landscape) {
     .switch{
-        width: 4.2em;
-    }
-
-
-    .intro-btn p {
-        font-size: 1.5rem;
+        width: 4.5em;
     }
 }
+
 /* Animations */
 @keyframes fadeIn {
     from {

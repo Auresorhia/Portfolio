@@ -1,27 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
-:root {
-    --primary: #473FF7;
-    --secondary: #57ED89;
-    --light-bg: #E5E5FF;
-    --dark: #1A1F2C;
-    --text: #333;
-}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--text);
+    color: #333;
     overflow-x: hidden;
-}
-.nav-links a:not(.contact):hover {
+  }
+  .nav-links a:not(.contact):hover {
     color: #473FF7;
   }
   
   .contact {
-    background: var(--primary);
+    background: #473FF7;
     text-decoration: none;
     color: white;
     padding: 0.5rem 2rem;
@@ -49,7 +43,7 @@ body {
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 3.9em;
+    width: 3.7em;
     height: 2em;
   }
 
@@ -109,7 +103,6 @@ body {
     width: 100%;
     background: white;
     padding: 1rem;
-    box-shadow: 0 2px 5px #0000001a;
   }
   .nav-links.active {
     display: flex;
@@ -130,105 +123,44 @@ body {
     height: 3px;
     background: black;
     transition: all 0.3s ease;
-    margin-left: 1rem;
 }
-  .logo img {
+.logo img {
     height: 5rem;
     margin-right: 2rem;
 }
-
-
-#photo-profile {
-    width: 30rem;
-    height: auto;
-    border-radius: 50px;
-    z-index: 2;
-}
-.intro{
+main{
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
-    margin: 13rem 0 0 0;
-    flex-wrap: wrap;
-    gap: 3rem;
+    align-items: center;
 }
-#titre-introduction{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    margin-right: 3rem;
-    font-size: 4rem;
+.mentions{
+    width: 60em;
+    padding: 3rem;
+    border-radius: 15px;
+    border: 4px solid;
+    margin-top: 10rem;
 }
 
-#presentation {
-    width: 45rem;
+h1{
+    text-align: center;
 }
 
-#name{
-    font-size: 4rem;
-    position: absolute;
-    bottom: 30rem;
-    right: 2rem;
-    color: var(--primary)
+hr{
+    margin: 2rem 0 2rem 0;
 }
 
-#text-presentation strong{
-    color: var(--secondary);
+h2{
+    margin-bottom:1rem;
 }
 
-#titre-services{
-    font-size: 3rem;
-    margin-left:2rem;
-}
-
-#sous-titre-services{
+li{
+    margin-bottom: 1rem;
     font-size: 1.2rem;
-}
-.container{
-    margin: 1rem;
+    font-weight: medium;
 }
 
-h4{
-    font-size: 2rem;
-    margin-left: 2rem;
-}
-h6{
-    font-size:1.5rem;
-}
-.service{
-    margin: 6rem 3rem 4rem 6rem;
-}
-.container-service{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.services{
-    display: flex;
-    
-}
-
-.container h5{
-    display: flex;
-    flex-direction: row-reverse;
-
-}
-
-
-h5{
-    font-size: 2rem;
-}
-
-.container-reverse h6{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.text-service{
-    font-size: 1rem;
-    margin-top: 1rem;
-}
 footer {
-    background: var(--dark);
+    background: #1A1F2C;
     color: white;
     padding: 2rem 1rem;
     margin-top: 3rem;
@@ -247,7 +179,7 @@ footer a {
     transition: color 0.3s ease;
 }
 footer a:hover {
-    color: var(--primary);
+    color: #473FF7;
 }
 .social-media {
     display: flex;
@@ -259,30 +191,17 @@ footer a:hover {
     .navbar {
         padding: 1rem;
     }
-    .service{
-        margin: 6rem 0 2rem 0;
-    }
 
     .nav-links {
         gap: 1rem;
     }
 
-    #name {
-        font-size: 2.5rem;
+    h1 {
+        font-size: 5rem;
     }
 
-    #text-presentation {
-        font-size: 2rem;
-    }
-
-    #titre-services {
-        font-size: 2rem;
-    }
-    h4{
-        font-size: 1.5rem;
-    }
-    #sous-titre-services {
-        font-size: 1.2rem;
+    h2 {
+        font-size: 3rem;
     }
     .logo img{
         height: 3rem;
@@ -297,15 +216,12 @@ footer a:hover {
         justify-content: center;
     }
     .switch{
-        width: 3.9rem;
+        width: 3.7em;
     }
     
 }
 
 @media screen and (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -320,9 +236,7 @@ footer a:hover {
         box-shadow: none;
         padding: 0;
         gap: 2rem;
-    }
-    #photo {
-        max-width: 600px;
+        font-size:x-large;
     }
     .logo img {
         height: 6rem;
@@ -334,35 +248,21 @@ footer a:hover {
     .social-media {
         justify-content: flex-start;
     }
+    .switch{
+        width: 4.7em;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .intro{
-        margin: 0 1rem 0 1rem;
-        font-size: 1rem;
+    h1{
+        font-size: 4rem;
     }
     h2{
-        font-size: 1.5rem;
-    }
-    #photo-profile{
-        max-width: 350px;
-        margin: 10rem 2.5rem 0 2.5rem;
-    }
-    #titre-services {
-        font-size: 1.5rem;
-        margin-top: 1rem;
-    }
-    h4{
-        font-size: 1rem;
-    }
-    h5{
-        font-size: 1.5rem;
-    }
-    h6{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .burger {
         display: flex;
+        margin-left:2rem;
     }
 
     .nav-links {
@@ -391,41 +291,21 @@ footer a:hover {
     .burger.toggle span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+
 }
 
-@media screen and (max-width: 372px){
-    #photo-profile{
-        max-width: 300px;
-    }
-    .intro{
-        font-size: 0.5rem;
-    }
-    h2{
-        font-size: 1rem;
-    }
-    h5{
-        font-size: 1rem;
-    }
-    h6{
-        font-size: 0.7rem;
-    }
-    .container{
-        margin-top: 0;
-    }
-    #titre-services{
-        margin-top: 2rem;
+@media screen and (max-width: 372px) {
+    h1{
+        font-size: 4rem;
     }
 }
 
-@media screen and (min-width: 1712px) {
-    .nav-links{
-        font-size:x-large;
-    }
+@media (orientation: landscape) {
     .switch{
-        width: 4.2em;
+        width: 4.5em;
     }
 }
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

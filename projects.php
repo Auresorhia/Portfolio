@@ -25,45 +25,48 @@
         </section>
 
         <!-- Slider de Projets -->
-        <div class="slider-container">
-            <div class="slider-projects">
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                        alt="Slider d'images Dynamique">
-                    <div class="slide-overlay">
-                        <h3>Slider d'images Dynamique</h3>
+         <section class="projects-slider">
+            <div class="slider-container">
+                <div class="slider-projects">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                            alt="Slider d'images Dynamique">
+                        <div class="slide-overlay">
+                            <h3>Slider d'images Dynamique</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                            alt="Formulaire de Contact">
+                        <div class="slide-overlay">
+                            <h3>Formulaire de Contact Fonctionnel</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
+                            alt="Forum de Discussion">
+                        <div class="slide-overlay">
+                            <h3>Forum de Discussion</h3>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                            alt="Jeu de Snake">
+                        <div class="slide-overlay">
+                            <h3>Jeu de Snake</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
-                        alt="Formulaire de Contact">
-                    <div class="slide-overlay">
-                        <h3>Formulaire de Contact Fonctionnel</h3>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
-                        alt="Forum de Discussion">
-                    <div class="slide-overlay">
-                        <h3>Forum de Discussion</h3>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-                        alt="Jeu de Snake">
-                    <div class="slide-overlay">
-                        <h3>Jeu de Snake</h3>
-                    </div>
-                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
             </div>
-            <button class="prev-btn">&lt;</button>
-            <button class="next-btn">&gt;</button>
-        </div>
+        </section>
     </main>
     <?php
         include "inc/footer.inc.php";
     ?>
     <script src="./asset/js/projects-mode-dark.js"></script>
     <script src="./asset/js/slider.js"></script>
+    <script src="asset/js/menu-burger.js"></script>
 </body>
 </html>
