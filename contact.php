@@ -26,7 +26,7 @@
             <!-- Section du formulaire -->
             <section class="carre2">
                 <!-- Bouton fermer -->
-                <button type="button" class="fermer" aria-label="Fermer le formulaire">
+                <button class="fermer" aria-label="Fermer le formulaire">
                     <span class="croix" aria-hidden="true">
                         <span class="branche1"></span>
                         <span class="branche2"></span>
@@ -98,5 +98,6 @@
         </section>
     </main>
     <script src="asset/js/contact.js"></script>
+    <script src="asset/js/fermer.js"></script>
 </body>
 </html>
