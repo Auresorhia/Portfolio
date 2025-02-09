@@ -32,7 +32,7 @@ include "public/inc/head.inc.php";
                                 Bonjour, je m'appelle Aurélie Lao. Je suis en première année de <strong>développement web</strong> à Digital Campus. Je cherche <strong>une alternance</strong> pour une durée de 2 ans.
                             </p>
                         <div class="button">
-                            <a href="contact.php" id="contactez-moi">Contactez-moi</a>
+                            <a href="/php/portfolio-crud/public/contact.php" id="contactez-moi">Contactez-moi</a>
                             <a href="public/asset/img/CV.pdf" id="cv">Mon CV</a>
                         </div>
 
